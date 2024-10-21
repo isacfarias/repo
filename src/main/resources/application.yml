@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: repo-task
+  devtools:
+    add-properties: false
