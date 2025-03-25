@@ -11,28 +11,7 @@
 </head>
 <body>
 <main class="container">
-    <section>
-        <h1>Htmx Demo</h1>
-        <div id="parent-div"></div>
-        <button hx-post="/clicked"
-                hx-trigger="click"
-                hx-target="#parent-div"
-                hx-swap="outerHTML">
-            Click Me!
-        </button>
-    </section>
-
-    <section>
-        <input type="text"
-               name="q"
-               hx-get="/search"
-               hx-trigger="keyup changed delay:500ms"
-               hx-target="#search-results"
-               placeholder="Search..."
-        >
-        <div th:replace="~{search::results}">
-        </div>
-    </section>
+    <th:block th:replace="fragments/header :: header"></th:block>
 
 </main>
 </body>

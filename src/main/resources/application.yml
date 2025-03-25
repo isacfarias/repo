@@ -3,3 +3,5 @@ spring:
     name: repo-task
   devtools:
     add-properties: false
+  thymeleaf:
+    enabled: true
