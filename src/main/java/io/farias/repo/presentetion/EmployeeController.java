@@ -47,7 +47,6 @@ public class EmployeeController {
     public String deleteThroughId(@PathVariable(value = "id") long id) {
         employeeServiceImpl.deleteViaId(id);
         return "redirect:/employee/list-employee";
-
     }
 
 }
